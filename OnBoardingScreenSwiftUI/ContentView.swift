@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             if show || UserDefaults.standard.bool(forKey: initialLaunchKey){
-//                LoginView().transition(.move(edge: .bottom))
+                LoginView().transition(.move(edge: .bottom))
             } else {
                 PageViewContainer( viewControllers: Page.getAll.map({  UIHostingController(rootView: PageView(page: $0) ) }), presentSignupView: {
                     withAnimation {

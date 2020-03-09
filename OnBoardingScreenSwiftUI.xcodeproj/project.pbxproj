@@ -20,6 +20,10 @@
 		8FF80C6C24161EBD00EE7BD8 /* LCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF80C6B24161EBD00EE7BD8 /* LCButton.swift */; };
 		8FF80C6E24161EDD00EE7BD8 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF80C6D24161EDD00EE7BD8 /* ColorExt.swift */; };
 		8FF80C7024161F4100EE7BD8 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF80C6F24161F4100EE7BD8 /* Page.swift */; };
+		8FF80C722416203500EE7BD8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF80C712416203400EE7BD8 /* LoginView.swift */; };
+		8FF80C742416204E00EE7BD8 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF80C732416204E00EE7BD8 /* SignupView.swift */; };
+		8FF80C762416207500EE7BD8 /* RecoverPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF80C752416207500EE7BD8 /* RecoverPassword.swift */; };
+		8FF80C78241620B000EE7BD8 /* LCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF80C77241620B000EE7BD8 /* LCTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		8FF80C6B24161EBD00EE7BD8 /* LCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCButton.swift; sourceTree = "<group>"; };
 		8FF80C6D24161EDD00EE7BD8 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		8FF80C6F24161F4100EE7BD8 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		8FF80C712416203400EE7BD8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8FF80C732416204E00EE7BD8 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		8FF80C752416207500EE7BD8 /* RecoverPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPassword.swift; sourceTree = "<group>"; };
+		8FF80C77241620B000EE7BD8 /* LCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,17 +78,17 @@
 		8FF80C4924161BA600EE7BD8 /* OnBoardingScreenSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				8FF80C6324161E2400EE7BD8 /* Models */,
-				8FF80C6224161E0E00EE7BD8 /* Extensions */,
-				8FF80C6124161E0000EE7BD8 /* Views */,
-				8FF80C6024161DF600EE7BD8 /* ViewController */,
-				8FF80C4A24161BA600EE7BD8 /* AppDelegate.swift */,
-				8FF80C4C24161BA600EE7BD8 /* SceneDelegate.swift */,
-				8FF80C4E24161BA600EE7BD8 /* ContentView.swift */,
-				8FF80C5024161BAA00EE7BD8 /* Assets.xcassets */,
-				8FF80C5524161BAA00EE7BD8 /* LaunchScreen.storyboard */,
 				8FF80C5824161BAA00EE7BD8 /* Info.plist */,
+				8FF80C4A24161BA600EE7BD8 /* AppDelegate.swift */,
+				8FF80C4E24161BA600EE7BD8 /* ContentView.swift */,
+				8FF80C4C24161BA600EE7BD8 /* SceneDelegate.swift */,
+				8FF80C5024161BAA00EE7BD8 /* Assets.xcassets */,
+				8FF80C6224161E0E00EE7BD8 /* Extensions */,
+				8FF80C5524161BAA00EE7BD8 /* LaunchScreen.storyboard */,
+				8FF80C6324161E2400EE7BD8 /* Models */,
 				8FF80C5224161BAA00EE7BD8 /* Preview Content */,
+				8FF80C6024161DF600EE7BD8 /* ViewController */,
+				8FF80C6124161E0000EE7BD8 /* Views */,
 			);
 			path = OnBoardingScreenSwiftUI;
 			sourceTree = "<group>";
@@ -108,6 +116,9 @@
 				8FF80C6424161E3A00EE7BD8 /* PageView.swift */,
 				8FF80C6624161E5F00EE7BD8 /* PageViewContainer.swift */,
 				8FF80C6824161E8B00EE7BD8 /* PageIndicator.swift */,
+				8FF80C712416203400EE7BD8 /* LoginView.swift */,
+				8FF80C732416204E00EE7BD8 /* SignupView.swift */,
+				8FF80C752416207500EE7BD8 /* RecoverPassword.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				8FF80C6B24161EBD00EE7BD8 /* LCButton.swift */,
+				8FF80C77241620B000EE7BD8 /* LCTextField.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -207,14 +219,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF80C742416204E00EE7BD8 /* SignupView.swift in Sources */,
 				8FF80C6524161E3A00EE7BD8 /* PageView.swift in Sources */,
 				8FF80C6E24161EDD00EE7BD8 /* ColorExt.swift in Sources */,
 				8FF80C4B24161BA600EE7BD8 /* AppDelegate.swift in Sources */,
 				8FF80C4D24161BA600EE7BD8 /* SceneDelegate.swift in Sources */,
 				8FF80C7024161F4100EE7BD8 /* Page.swift in Sources */,
+				8FF80C762416207500EE7BD8 /* RecoverPassword.swift in Sources */,
 				8FF80C6724161E5F00EE7BD8 /* PageViewContainer.swift in Sources */,
+				8FF80C78241620B000EE7BD8 /* LCTextField.swift in Sources */,
 				8FF80C6C24161EBD00EE7BD8 /* LCButton.swift in Sources */,
 				8FF80C4F24161BA600EE7BD8 /* ContentView.swift in Sources */,
+				8FF80C722416203500EE7BD8 /* LoginView.swift in Sources */,
 				8FF80C6924161E8B00EE7BD8 /* PageIndicator.swift in Sources */,
 				8FF80C5F24161DB200EE7BD8 /* PageViewController.swift in Sources */,
 			);
