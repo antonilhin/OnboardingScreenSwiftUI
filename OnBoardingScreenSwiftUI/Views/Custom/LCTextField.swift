@@ -19,7 +19,6 @@ struct LCTextfield: View {
     
     var body: some View {
         HStack {
-            
             if isSecure{
                 SecureField(placeholder, text: self.$value, onCommit: {
                     self.onEditingChanged(false)
@@ -29,7 +28,6 @@ struct LCTextfield: View {
                     self.onEditingChanged(flag)
                 }).padding()
             }
-            
             icon.imageScale(.large)
                 .padding()
                 .foregroundColor(color)

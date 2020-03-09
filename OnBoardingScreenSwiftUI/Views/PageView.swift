@@ -15,8 +15,7 @@ struct PageView: View {
     var body: some View {
         VStack{
             Image(page.image)
-            VStack{
-                Text(page.heading).font(.title).bold().layoutPriority(1).multilineTextAlignment(.center)
+            VStack{ Text(page.heading).font(.title).bold().layoutPriority(1).multilineTextAlignment(.center)
                 Text(page.subSubheading)
                     .multilineTextAlignment(.center)
             }.padding()

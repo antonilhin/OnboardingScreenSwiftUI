@@ -21,7 +21,6 @@ struct RecoverPasswordView: View {
                 LCTextfield(value: self.$email, placeholder: "Email", icon: Image(systemName: "at"))
                 LCButton(text: "Reset Password") {}
             }
-            
             Button(action: {
                 self.presentPasswordRecoverySheet.toggle()
             }) {
@@ -29,7 +28,6 @@ struct RecoverPasswordView: View {
                     Text("Cancel").accentColor(Color.accentColor)
                 }
             }
-            
         }.padding()
     }
 }

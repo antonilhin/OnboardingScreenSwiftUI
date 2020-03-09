@@ -21,9 +21,7 @@ struct PageViewContainer<Page: View>  : View {
             PageViewController(controllers: viewControllers, currentPage: self.$currentPage)
             
             PageIndicator(currentIndex: self.currentPage)
-            
             VStack {
-                
                 Button(action: {
                     if self.currentPage < self.viewControllers.count - 1{
                         self.currentPage += 1

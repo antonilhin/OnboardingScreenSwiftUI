@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct LCButton: View {
+
     var text = "Next"
     var action: (()->()) = {}
     

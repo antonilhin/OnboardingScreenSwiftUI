@@ -33,14 +33,12 @@ struct SignupView: View {
                     
                 }
             }
-            
             Button(action: {
             }) {
                 HStack {
                     Text("Already have an account?").accentColor(Color.accentColor)
                 }
             }
-            
         }.padding().offset(y: self.formOffset)
     }
 }

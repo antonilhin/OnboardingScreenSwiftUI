@@ -31,7 +31,6 @@ struct LoginView: View {
                     
                 }
             }
-            
             Button(action: {
                 self.presentSignupSheet.toggle()
             }) {
@@ -41,7 +40,6 @@ struct LoginView: View {
             }.sheet(isPresented: self.$presentSignupSheet) {
                 SignupView()
             }
-            
             Button(action: {
                 self.presentPasswordRecoverySheet.toggle()
             }) {
@@ -51,7 +49,6 @@ struct LoginView: View {
             }.sheet(isPresented: self.$presentPasswordRecoverySheet) {
                 RecoverPasswordView(presentPasswordRecoverySheet: self.$presentPasswordRecoverySheet)
             }
-            
         }.padding().offset(y: self.formOffset)
     }
 }

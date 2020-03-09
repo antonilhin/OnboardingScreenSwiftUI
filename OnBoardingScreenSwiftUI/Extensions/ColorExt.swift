@@ -9,6 +9,7 @@
 import SwiftUI
 
 extension Color {
+    
     static var backgroundColor = Color("bgColor")
     static var darkerColor = Color("darkerColor")
     static var offColor = Color("offColor")
@@ -19,4 +20,5 @@ extension Color {
     static var purple = Color("purple")
     static var shallowOrange = Color("shallowOrange")
     static var teal = Color("teal")
+    
 }

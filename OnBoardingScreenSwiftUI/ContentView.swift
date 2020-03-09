@@ -29,7 +29,7 @@ struct ContentView: View {
             .background(Color.backgroundColor)
             .edgesIgnoringSafeArea(.all)
             .onTapGesture {
-//                UIApplication.shared.endEditing()
+                UIApplication.shared.endEditing()
         }
     }
 }
